@@ -1,13 +1,21 @@
 # Planering
+Texten handlar om hur google cencurerar både deras sökmotor och andra medier som t.ex. youtube.
 
-Skriv ned tema, färger, vad handlar din text om.
-Skapa 
+ färger
+* Text	 	28262C 
+* Headers	28262C
+* bakgrund 	F9F5FF
+* Extra blå 1	5E71E8
+* Extra blå 2	8A84E2
 
-* färger
-* bilder ikoner
-* typsnitt
-* former
+bilder ikoner
+![Galoogalo](/img/Google.jpg)
 
+typsnitt
+* Geometric sans
+
+former
+* Illustration or photos
 
 
 ## Vecka 17
