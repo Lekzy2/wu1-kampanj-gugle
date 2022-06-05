@@ -1,55 +1,155 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .container {
-            margin-top: 5rem;
-            width: 100%;
-        }
-        p {
-            margin-bottom: 3rem;
-        }
-        .swatches {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    <head>
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/geometric-sans-serif-v1');
+        </style>
 
-        }
-        .swatches li {
-            aspect-ratio: 1;
-            display: grid;
-            place-content: center;
-            border-radius: .5rem;
-            font-size: 3rem;
-            text-align: center;
-            border: 1px solid var(--color-shadow);
-        }
-    </style>
-</head>
-<body>
-    <main class="container">
-        <h1>Bygg din kampanj</h1>
-        <p>Välj en mall/tema kopiera html filen, skapa en tema-dittnamn.css och länka den.</p>
-        <ul class="swatches">
-            <li>
-                <a href="theme-no.html">Utan tema</a>
-            </li>
-            <li>
-                <a href="theme-1.html">Tema 1</a>
-            </li>
-            <li>
-                <a href="theme-2.html">Tema 2</a>
-            </li>
-        </ul>
-    </main>
-</body>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="http://fonts.cdnfonts.com/css/geometric-sans-serif-v1" rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/theme-1.css" />
+        <!-- För bilden längst ner -->
+        <title>Google Censorship Kampanj</title>
+    </head>
+    <body>
+        <!-- https://jensnti.github.io/wu-exempel/hamburgermeny/ -->
+        <nav class="navbar">
+            <a class="brand" href="#">Cencur giganten Google</a>
+            <button class="navbar__toggle">
+                <span class="material-icons"> menu </span>
+            </button>
+            <div class="navbar__collapse">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Intro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="container">
+                <h2>GOOGLE CENCUR</h2>
+                <p>
+                    Stor del av människor använder Google nästan dagligen. Men det är inte många
+                    som tänker på är att Google har många olika sätt att cencurera och sortera ut 
+                    sitt innehåll. Det är inte bara att de kan använda detta utan det är att dem 
+                    använder det.
+                </p>
+                <!-- https://jensnti.github.io/wu-exempel/knappar/ -->
+                <div class="cta">
+                    <a href="#intro" class="btn">Läs mer!</a>
+                </div>
+            </div>
+            <!-- kolla css vad denna gör, ligger över hela hero för att texten ska gå att läsa, kontrast -->
+            <div class="overlay"></div>
+        </header>
+        <!-- https://jensnti.github.io/wu-exempel/media-queries/ -->
+        <main class="container">
+            <section class="intro" id="intro">
+                <h2>Youtube</h2>
+                <p>
+                    Enligt statista 
+                    <a href="https://www.statista.com/statistics/579479/most-popular-us-music-video-apps-ranked-by-audience/">
+                    (Most popular entertainment apps in the U.S. 2019, by audience, 
+                    published by Marie Charlotte Göttning, jan 18, 2022)</a> 
+                    så är youtube den mest populära appen i USA med 163.76 miljoner 
+                    användare i månaden, jämför med andra plats IMDb med 51.01 
+                    miljoner användare i månaden. 
+                </p>
+                <p>
+                    Problemet med youtube idag är
+                    deras cencurering via AI och deras dåliga kundservice leder till
+                    väldigt mycket innehåll som orättvist cencureras bort med 18+ 
+                    taggar eller rent av bortagning eller demonetisering utav innehåll. 
+                    Detta är ett stort problem då det är många som har youtube som jobb, 
+                    säg då att deras video blir orättvist demonetiserat utav någon bot 
+                    eller annat vilket helt och hållet tar bort all inkomst som skaparen 
+                    skulle fått av videon. Detta skapar då ett problem då skaparna som 
+                    har youtube som ett heltids jobb har det mycket svårare att säckert 
+                    ha en stabil form av inkomst. Detta är inget ovanligt och drabbar 
+                    alla, oftast större youtubers men kan även drabba mindre skapare 
+                    också. Det finns också folk som använder detta system för att 
+                    eliminera kanaler genom youtubes 3 strike system om man får 3 stycken 
+                    strikes så termineras kanalen och allt på den. Detta händer inte lika 
+                    ofta men är fortfarande inte okej för en app/webplats med över 2.6 
+                    biljoner av aktiva användare. 
+                    <a href="https://www.globalmediainsight.com/blog/youtube-users-statistics/">
+                    (YOUTUBE USER STATISTICS 2022, Posted by GMI Blogger Posted in 
+                    Uncategorized, loaded 2022/06/05)</a>.
+                </p>
+                <p>
+                    Det är inte bara problem med youtubes cencurerings algoritmer som
+                    folk har problem med, utan det är också deras bortagning utav 
+                    ogillar markeringen, så man inte längre kan se hur många ogillningar
+                    som en video har. Detta val var stort kriteserat både från användare 
+                    och skapare. Många kopplade detta till att youtube blev hårt kritiserat 
+                    av youtube rewind vilket ska vara en sammanfattning utav årets händelser 
+                    på sidan, med de mest relevanta skaparna och händelserna. Youtube gjorde
+                    många missnöjda med deras sammanfattning av 2018 som fick upp till 19 
+                    miljoner "dislikes" och gick ner i youtubes historia som den mest ogillade
+                    videon på webplatsen innan youtube tog bort så man inte kan se hur många 
+                    dislikes en video har.
+                </p>
+
+                <section class="about">
+                    <div>
+                        <h2>Google search</h2>
+                        <p>
+                            När man sitter och söker runt efter information på Google efter matrial 
+                            för, till exempel sitt skolarbete så kanske man noterar att man inte 
+                            riktigt får upp vad det är man vill med den första sökningen eller att 
+                            man bara får upp en sida av historien man söker på. Detta är mest troligen
+                            Googles sök AI vilket har en tendens att cencurera bort saker man letar
+                            efter. Google har inte officielt gått ut och sagt att dem gör det men med 
+                            biljoner utav användare där det finns väldigt många som upplever samma 
+                            problem så tror jag det är säckert att säga att den gör det. Denna AI har 
+                            såklart flertal variabler som vilket land man bor i och vad man tidigare 
+                            har sökt på men, det ändrar inte på att det är en form av cencurering. 
+                            Personligen tycker jag att detta är något man borde få bestämma om det 
+                            ska vara på eller inte, men tror inte Google kommer göra detta eftersom 
+                            de använder AI'n för att cencurera ut saker de inte gillar eller står för.
+                        </p>
+                        <p>
+                            Det kommer nog inte som en överaskning om att Kina vill censurera saker som till
+                            exempel sökmotorer, Google är såklart inget undantag. Google censurerar därför
+                            vissa spesifika saker som den Kinesiska ledningen bestämmer det inte vill ha. 
+                            Men det många inte kanske vet eller tänker på är att detta är inte bara Kina som 
+                            håller på med. Även Sverige är inget undantag för detta, nu vad som faktiskt 
+                            censurerats i Sverige är svårt att säga eftersom det är krypterat men anledningarna 
+                            brukar oftast lyda till Privacy, Copyright, Hate Speech osv. Men som sagt det är 
+                            inte riktigt en hemlighet att Google censurerar saker, men dem är väldigt kryptiska 
+                            till exakt vad det är som censureras.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/photo-Jonny-Gios-unsplash.png" alt="Galogalo">
+                    </div>
+                </section>
+               
+
+
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    photo by <a href="https://unsplash.com/@mitchel3uo">Mitchell Gios</a> on <a href="https://unsplash.com/photos/UZqq8Oi7PXk">unsplash</a>
+                    <br>
+                    photo by <a href="https://unsplash.com/@supergios">Jonny Gios</a> on <a href="https://unsplash.com/photos/PDg180uwHvQ">unsplash</a>
+                </p>
+            </div>
+        </footer>
+        <script defer src="js/menu.js"></script>
+    </body>
 </html>
